@@ -1,0 +1,137 @@
+void contcres(void) 
+{
+    return;
+}
+
+void contdecres(void)
+{
+    return;
+}
+
+void ehpar(void)
+{
+    return;
+}
+
+void ehprimo(void)
+{
+    return;
+}
+
+void fatorial(void)
+{
+    return;
+}
+
+void fibonacci(void)
+{
+    return;
+}
+
+void media(void)
+{
+    return;
+}
+
+void potencia(void)
+{
+    return;
+}
+
+void resto(void)
+{
+    return;
+}
+
+void vetor(void)
+{
+    return;
+}
+
+void trataSemPreempcao(void)
+{
+    int programa;
+    programa = input();
+
+    if (programa == 1)
+    {
+        contcres();
+    }
+
+    if (programa == 2)
+    {
+        contdecres();
+    }
+
+    if (programa == 3)
+    {
+        ehpar();
+    }
+
+    if (programa == 4) 
+    {
+        ehprimo();
+    }
+
+    if (programa == 5)
+    {
+        fatorial();
+    }
+
+    if (programa == 6)
+    {
+        fibonacci();
+    }
+
+    if(programa == 7)
+    {
+        media();
+    }
+
+    if(programa == 8)
+    {
+        potencia();
+    }
+
+    if(programa == 9)
+    {
+        resto();
+    }
+
+    if(programa == 10)
+    {
+        vetor();
+    }
+    return;
+}
+
+void trataComPreempcao(void)
+{
+    int qtdeProgramas; int i; int vet[10];
+    qtdeProgramas = input();
+
+    i = 0;
+    while(i < qtdeProgramas)
+    {
+        vet[i] = input();
+        i = i + 1;
+    }
+    return;
+}
+
+void main(void)
+{
+    int preempcao; 
+
+    preempcao = input();
+
+    if (preempcao == 0) /* sem preempcao */
+    {
+        trataSemPreempcao();
+    }
+
+    if (preempcao == 1) /* com preempcao */
+    {
+        trataComPreempcao();
+    }
+}

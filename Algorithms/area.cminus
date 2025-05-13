@@ -1,0 +1,9 @@
+void main(void)
+{
+	int b; int h; int m; int a;
+	b = input();
+	h = input();
+	m = b * h;
+	a = m / 2;
+	output(a);
+}

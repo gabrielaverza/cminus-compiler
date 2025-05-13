@@ -1,0 +1,16 @@
+void main (void) 
+{
+    int x; int d; int z; int r;
+    x = input();
+    z = 1; /* z = 2 eh par, z = 1 nao eh par */
+
+    d = x / 2;
+    r = x - (d * 2);
+
+    if (r == 0) {
+        z = 2;
+    } else {
+        z = 1;
+    }
+    output(z);
+}

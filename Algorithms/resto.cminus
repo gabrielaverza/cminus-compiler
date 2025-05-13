@@ -1,0 +1,10 @@
+void main (void) 
+{
+    int x; int y; int d; int r;
+    x = input();
+    y = input();
+
+    d = x / y;
+    r = x - ( d * y );
+    output(r);
+}

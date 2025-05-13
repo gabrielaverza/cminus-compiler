@@ -1,0 +1,13 @@
+void main(void) {
+    int x; int y; int z; int w;
+    x = input(); 
+    y = input();
+
+    w = 1;        
+    z = 0;        
+    while (z < y) {  
+        w = w * x;
+        z = z + 1;
+    }
+    output(w);    
+}

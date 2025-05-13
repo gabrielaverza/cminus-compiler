@@ -1,0 +1,20 @@
+void main (void) 
+{
+    int x; int y; int z; int r; int d;
+    x = input(); 
+    z = 1; /* z = 1 eh primo, z > 1 nao eh primo */
+    y = 2;
+
+    while (y != x) {
+        d = x / y; 
+        r = x - ( d * y ); 
+        if (r == 0) {
+            /* nao eh primo */
+            z = 2;
+            y = x;
+        } else {
+            y = y + 1;
+        }
+    }
+    output(z);
+}

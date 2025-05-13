@@ -1,0 +1,11 @@
+void main(void)
+{	
+    int x; int y;
+    x = input(); 
+    y = 0;
+    while (y <= x)
+    {
+        output(y);
+        y = y + 1;
+    }
+}

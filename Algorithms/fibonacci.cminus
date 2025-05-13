@@ -1,0 +1,19 @@
+void main(void)
+{	
+    int n;
+	n = input();
+
+    if (n > 1) {
+        int i; int a; int b; int temp;
+        i = 2; a = 0; b = 1;
+        while (i <= n) {
+            temp = a + b;
+            a = b;
+            b = temp;
+            i = i + 1;
+            output(b);
+        }
+    } else {
+        output(n);
+    }
+}
